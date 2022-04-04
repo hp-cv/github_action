@@ -28,7 +28,17 @@ jobs:
             ls -a
             echo show current versions
             git --version
+            python --version
             #apt search cuda
+            echo workspace location
+            echo $RUNNER_WORKSPACE
+            echo who is running this script
+            whoami
+            echo how is the disc laid out
+            df -h
+            echo avaialable env variables
+            env
+            
             apt install -y curl
             
         
