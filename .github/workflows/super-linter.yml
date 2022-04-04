@@ -25,13 +25,8 @@ jobs:
         run: 
             echo hello, world
             pwd
-            ls -a
+            ls -a;
             echo show current versions
             git --version
             
         
-      - name: Lint Code Base
-        uses: github/super-linter@v4
-        env:
-          VALIDATE_ALL_CODEBASE: false
-          DEFAULT_BRANCH: main
