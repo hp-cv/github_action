@@ -29,6 +29,6 @@ jobs:
             echo show current versions
             git --version
             apt search cuda
-            apt install curl
+            apt install -Y curl
             
         
