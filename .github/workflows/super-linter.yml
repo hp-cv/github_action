@@ -29,6 +29,8 @@ jobs:
             echo show current versions
             git --version
             python --version
+            pip --version
+            pip list
             #apt search cuda
             echo workspace location
             echo $RUNNER_WORKSPACE
