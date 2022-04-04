@@ -22,7 +22,7 @@ jobs:
           fetch-depth: 0
 
       - name: Checkout code
-        run: 
+        run: |
             echo hello, world
             pwd
             ls -a
