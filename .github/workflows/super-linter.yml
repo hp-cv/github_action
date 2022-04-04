@@ -24,6 +24,7 @@ jobs:
       - name: Checkout code
         run: |
             echo hello, world
+            cat /proc/cpuinfo
             pwd
             ls -a
             echo show current versions
