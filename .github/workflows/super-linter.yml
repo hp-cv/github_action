@@ -22,16 +22,13 @@ jobs:
           fetch-depth: 0
 
       - name: Checkout code
-        run: 
+        run: |
             echo hello, world
             pwd
             ls -a
             echo show current versions
             git --version
+            apt search cuda
+            apt install curl
             
         
-      - name: Lint Code Base
-        uses: github/super-linter@v4
-        env:
-          VALIDATE_ALL_CODEBASE: false
-          DEFAULT_BRANCH: main
