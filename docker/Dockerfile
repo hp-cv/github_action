@@ -9,7 +9,7 @@ COPY . /usr/src
 WORKDIR /usr/src
 RUN /venv/bin/pip install -r requirements.txt
 
-COPY --from=build-venv /venv /venv
+COPY --from=builder /venv /venv
 
 #FROM gcr.io/distroless/python3-debian11
 # COPY --from=build-venv /venv /venv
