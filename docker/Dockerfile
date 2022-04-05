@@ -7,7 +7,7 @@ RUN apt-get update && \
 FROM builder
 COPY . /usr/src
 WORKDIR /usr/src
-RUN /venv/bin/pip install -r requirments.txt
+RUN /venv/bin/pip install -r requirements.txt
 
 #FROM gcr.io/distroless/python3-debian11
 # COPY --from=build-venv /venv /venv
