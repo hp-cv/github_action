@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build using the Docker-compose.yml
-      run: docker-compose build docker-distro 
+      run: cd docker && docker-compose build docker-distro 
       
     - uses: actions/checkout@v3
     - name: Build the Docker image
