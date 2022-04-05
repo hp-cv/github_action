@@ -9,6 +9,8 @@ name: Lint Code Base
 on:
   push:
     branches: [ action_test ]
+    paths:
+    - 'github_actions_scripts'
   pull_request:
     branches: [ action_test ]
 jobs:
