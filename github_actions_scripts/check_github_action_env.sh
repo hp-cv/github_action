@@ -17,4 +17,4 @@
             echo avaialable env variables
             env
             
-            apt install -y curl
+            #apt install -y curl
