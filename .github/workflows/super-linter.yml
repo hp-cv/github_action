@@ -26,9 +26,8 @@ jobs:
             echo hello, world
             ls
             ls github_actions_scripts
-            cat github_actions_scritps\check_github_action_env.sh
             cat github_actions_scritps/check_github_action_env.sh
-            check_github_action_env.sh
+            
       - name: run github action env script
         run: bash github_actions_scritps/check_github_action_env.sh
 
