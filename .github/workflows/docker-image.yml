@@ -19,7 +19,7 @@ jobs:
       run: cd docker && docker-compose build docker-distro 
     
     - name: run the built image
-      run: docker run --rm -it trial:latest bash ls
+      run: docker run --rm -it trial:latest 
       
     - uses: actions/checkout@v3
     - name: Build the Docker image
