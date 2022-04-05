@@ -22,7 +22,7 @@ jobs:
           fetch-depth: 0
 
       - name: run github action env script
-        run: sh ./github_actions_scritps/check_github_action_env.sh
+        run: bash ./github_actions_scritps/check_github_action_env.sh
       - name: Checkout code
         run: |
             echo hello, world
