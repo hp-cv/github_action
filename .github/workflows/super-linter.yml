@@ -21,27 +21,14 @@ jobs:
           # Full git history is needed to get a proper list of changed files within `super-linter`
           fetch-depth: 0
 
+      - name: run github action env script
+        run: sh ./github_actions_scritps/check_github_action_env.sh
       - name: Checkout code
         run: |
             echo hello, world
-            cat /proc/cpuinfo
-            pwd
-            ls -a
-            echo show current versions
-            git --version
-            python --version
-            pip --version
-            pip list
-            #apt search cuda
-            echo workspace location
-            echo $RUNNER_WORKSPACE
-            echo who is running this script
-            whoami
-            echo how is the disc laid out
-            df -h
-            echo avaialable env variables
-            env
             
-            apt install -y curl
-            
-        
+      
+      
+      
+      
+      
