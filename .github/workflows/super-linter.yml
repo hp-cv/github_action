@@ -20,13 +20,15 @@ jobs:
         with:
           # Full git history is needed to get a proper list of changed files within `super-linter`
           fetch-depth: 0
-
-      - name: run github action env script
-        run: bash ./github_actions_scritps/check_github_action_env.sh
-      - name: Checkout code
+          
+      - name: run multiple commands
         run: |
             echo hello, world
             ls
+            
+      - name: run github action env script
+        run: bash ./github_actions_scritps/check_github_action_env.sh
+
       
       
       
