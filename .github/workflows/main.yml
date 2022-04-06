@@ -45,7 +45,7 @@ jobs:
           git commit -m "Add changes" -a
           git status
           echo "-------"
-          git log.txt
+          git log
           echo "-------"
           cat log.txt
           
@@ -56,4 +56,4 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
            github_token: ${{ secrets.GITHUB_TOKEN }}
-           branch: export_result_here
+           branch: ${{ export_result_here }}
