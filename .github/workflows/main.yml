@@ -33,7 +33,7 @@ jobs:
       - name: create a log file
         run: |
           ls -lt
-          ls -lt >log
+          ls -lt >log.txt
 
       - name: commit log file
         id: commit
@@ -45,9 +45,9 @@ jobs:
           git commit -m "Add changes" -a
           git status
           echo "-------"
-          git log
+          git log.txt
           echo "-------"
-          cat log
+          cat log.txt
           
           
 #         shell: bash
