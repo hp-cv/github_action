@@ -52,6 +52,6 @@ jobs:
 #         shell: bash
       - name: Push log to export_result branch
         if: steps.commit.outputs.push == 'true'
-        uses: ad-m/github-push-action@export_result
+        uses: ad-m/github-push-action@export_result_here
         with:
            github_token: ${{ secrets.GITHUB_TOKEN }}
