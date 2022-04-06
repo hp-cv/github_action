@@ -54,6 +54,13 @@ jobs:
           echo ${GITHUB_REF}
           echo ${GITHUB_REF##*/}
           
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
+        
+      - name: print branch name
+        run : echo ${{ steps.extract_branch.outputs.branch }}
           
 #         shell: bash
       - name: Push log to export_result branch
