@@ -49,7 +49,7 @@ jobs:
           echo "-------"
           cat log
           
-          push original export_result
+          push original export_result_here
           
 #         shell: bash
 #       - name: Push log to export_result branch
