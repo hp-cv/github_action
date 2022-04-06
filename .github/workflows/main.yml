@@ -60,7 +60,7 @@ jobs:
         id: extract_branch
         
       - name: print branch name
-        run : echo ${{ steps.extract_branch.outputs.branch }}
+        run : echo ${{ steps.extract_branch.outputs.branch }}_benchmarking
           
 #         shell: bash
       - name: Push log to export_result branch
