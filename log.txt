@@ -1,0 +1,7 @@
+total 20
+-rw-r--r-- 1 runner docker    0 Apr  6 01:24 log.txt
+-rw-r--r-- 1 runner docker 1062 Apr  6 01:24 LICENSE
+-rw-r--r-- 1 runner docker   15 Apr  6 01:24 README.md
+-rw-r--r-- 1 runner docker  162 Apr  6 01:24 calculator.py
+drwxr-xr-x 2 runner docker 4096 Apr  6 01:24 docker
+drwxr-xr-x 2 runner docker 4096 Apr  6 01:24 github_actions_scripts
