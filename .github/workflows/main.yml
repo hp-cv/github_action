@@ -49,6 +49,11 @@ jobs:
           echo "-------"
           cat log.txt
           
+          echo "branch name----"
+          echo ${{ env.BRANCH_NAME }}
+          echo ${GITHUB_REF}
+          echo ${GITHUB_REF##*/}
+          
           
 #         shell: bash
       - name: Push log to export_result branch
