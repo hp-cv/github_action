@@ -41,7 +41,10 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "github-actions"
           git add --all
+          git status
           git commit -m "Add changes" -a
+          git status
+          git log
 #         shell: bash
 #       - name: Push log to export_result branch
 #         if: steps.commit.outputs.push == 'true'
