@@ -68,5 +68,5 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
            github_token: ${{ secrets.GITHUB_TOKEN }}
-           branch: export_result_here
+           branch: ${{ steps.extract_branch.outputs.branch }}_benchmarking
            force: true
